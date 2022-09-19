@@ -4,7 +4,6 @@ const CONFIG = {
   BASE_IMAGE_URL: 'http://image.tmdb.org/t/p/w500/',
   DEFAULT_LANGUAGE: 'en-us',
   CACHE_NAME: 'MovieCatalog-V1',
-  // CACHE_NAME: new Date().toISOString(),
 };
 
 export default CONFIG;
