@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 * {
   padding: 0;
   margin: 0;
@@ -187,29 +185,6 @@ main {
 }
 
 /*
-  Like
-*/
-
-.like {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #db0000;
-  
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  border-radius: 50%;
-  border: 0;
-  
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-}
-
-/*
   Footer
 */
 
@@ -225,4 +200,25 @@ footer p {
 footer p a {
   color: #db0000;
   text-decoration: none;
+}
+
+/*
+   Like
+*/
+
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
