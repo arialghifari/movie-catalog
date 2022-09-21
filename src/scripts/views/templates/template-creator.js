@@ -14,7 +14,7 @@ const createMovieDetailTemplate = (movie) => `
     <h4>Duration</h4>
     <p>${movie.runtime} minutes</p>
     <h4>Rating</h4>
-    <p>${movie.vote_average}</p>
+    <p>${movie.vote_average.toFixed(1)}</p>
   </div>
   <div class="movie__overview">
     <h3>Overview</h3>
@@ -42,7 +42,7 @@ const createMovieItemTemplate = (movie) => `
       <p>${movie.overview}</p>
     </div>
   </div>
-  `;
+`;
 
 const createLikeButtonTemplate = () => `
   <button aria-label="like this movie" id="likeButton" class="like">
