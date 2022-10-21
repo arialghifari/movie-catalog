@@ -14,7 +14,7 @@ const createMovieDetailTemplate = (movie) => `
     <h4>Duration</h4>
     <p>${movie.runtime} minutes</p>
     <h4>Rating</h4>
-    <p>${movie.vote_average.toFixed(1)}</p>
+    <p>${movie.vote_average}</p>
   </div>
   <div class="movie__overview">
     <h3>Overview</h3>
@@ -32,9 +32,9 @@ const createMovieItemTemplate = (movie) => `
                : 'https://picsum.photos/id/666/800/450?grayscale'
            }">
       <div class="movie-item__header__rating">
-        <p>⭐️<span class="movie-item__header__rating__score">${movie.vote_average.toFixed(
-          1
-        )}</span></p>
+        <p>⭐️<span class="movie-item__header__rating__score">${
+          movie.vote_average
+        }</span></p>
       </div>
     </div>
     <div class="movie-item__content">

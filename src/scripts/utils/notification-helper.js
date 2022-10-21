@@ -26,7 +26,7 @@ const NotificationHelper = {
     const status = await Notification.requestPermission();
 
     if (status === 'denied') {
-      console.log('Notification denied');
+      console.log('Notification Denied');
     }
 
     if (status === 'default') {
@@ -35,8 +35,8 @@ const NotificationHelper = {
   },
 
   async _showNotification({ title, options }) {
-    const serviceWorkserRegistration = await navigator.serviceWorker.ready;
-    serviceWorkserRegistration.showNotification(title, options);
+    const serviceWorkerRegistration = await navigator.serviceWorker.ready;
+    serviceWorkerRegistration.showNotification(title, options);
   },
 };
 
